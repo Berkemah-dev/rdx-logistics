@@ -1,0 +1,90 @@
+﻿@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+
+  --color-rdx-red: #c8102e;
+  --color-rdx-red-dark: #9d0b22;
+  --color-rdx-red-light: #e62040;
+  
+  --color-rdx-navy: #0f1f3d;
+  --color-rdx-navy-dark: #070f20;
+  --color-rdx-navy-card: #ffffff;
+  --color-rdx-navy-surface: #f4f7fc;
+  --color-rdx-navy-border: #e1e7f1;
+}
+
+@layer base {
+  * {
+    border-color: #e2e8f0;
+  }
+  
+  body {
+    background-color: #f4f7fc;
+    color: #243654;
+    font-family: var(--font-sans);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c8102e;
+}
+
+/* Fresh Enterprise Card & Surface helpers */
+.panel-fresh {
+  background: #ffffff;
+  border: 1px solid #e1e7f1;
+  border-radius: 16px;
+  box-shadow: 0 4px 18px rgba(15, 31, 61, 0.05);
+  transition: all 0.25s ease;
+}
+
+.panel-fresh-hover {
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.panel-fresh-hover:hover {
+  border-color: rgba(200, 16, 46, 0.35);
+  box-shadow: 0 12px 32px rgba(15, 31, 61, 0.09);
+  transform: translateY(-3px);
+}
+
+.badge-rdx-soft {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  background: #fef2f2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* Ticker marquee animation */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}

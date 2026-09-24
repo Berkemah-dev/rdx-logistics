@@ -1,4 +1,4 @@
-﻿import React from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowRight, ShieldCheck, Globe, Anchor } from 'lucide-react'
 
@@ -14,8 +14,8 @@ export const HeroSection: React.FC = () => {
         />
         {/* Deep Corporate Navy gradient overlay ensuring high contrast for typography */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#0a1428]/95 via-[#0f1f3d]/80 to-transparent lg:w-3/5" />
-        {/* Soft bottom blend towards the fresh canvas #f4f7fc */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#f4f7fc] via-transparent to-[#0a1428]/40" />
+        {/* Soft bottom blend towards RDX corporate navy #0a1428 */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0a1428] via-transparent to-[#0a1428]/40" />
       </div>
 
       {/* Main Content: Clean, Fresh, Elegant & Well-Proportioned */}

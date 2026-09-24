@@ -10,7 +10,7 @@ import { ContactPage } from './pages/ContactPage'
 export function App() {
   return (
     <BrowserRouter>
-      <div className="min-h-screen flex flex-col bg-[#05081c] text-slate-100 selection:bg-[#c8102e] selection:text-white">
+      <div className="min-h-screen flex flex-col bg-[#0a1428] text-slate-100 selection:bg-[#c8102e] selection:text-white">
         <Navbar />
         <main className="flex-1">
           <Routes>
